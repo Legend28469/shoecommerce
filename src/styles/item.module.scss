@@ -30,9 +30,16 @@
     transition: all 150ms ease-in-out;
 
     img {
-      transform: scaleX(-1) rotate(12deg);
       width: 400px;
       transition: all 150ms ease-in-out;
+    }
+
+    .regular {
+      transform: rotate(12deg);
+    }
+
+    .flipped {
+      transform: scaleX(-1) rotate(12deg);
     }
   }
 
@@ -61,7 +68,11 @@
 
     .shoe {
       top: 10%;
-      img {
+      .regular {
+        transform: rotate(0deg) scale(1.2);
+      }
+
+      .flipped {
         transform: scaleX(-1) rotate(0deg) scale(1.2);
       }
     }

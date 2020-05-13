@@ -27,7 +27,11 @@ const Item = ({ name, price, isFacingRight, image, shoeNumber }) => {
       <div className={styles.number}>{shoeNumber}</div>
 
       <div className={styles.shoe}>
-        <img src={image.url} alt="" />
+        <img
+          className={isFacingRight ? styles.flipped : styles.regular}
+          src={image.url}
+          alt=""
+        />
       </div>
 
       <div className={styles.description}>
