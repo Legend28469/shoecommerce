@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 0.9rem;
+
+  .circle {
+    position: absolute;
+    top: -230px;
+    left: 17%;
+    z-index: -1;
+    height: 550px;
+    width: 550px;
+    border-radius: 100%;
+    background-color: #fbfbfb;
+  }
+
+  .title {
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .sexes {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    width: 12rem;
+    justify-content: space-between;
+  }
+
+  .cart {
+    margin-left: auto;
+    margin-right: 4rem;
+    text-transform: uppercase;
+
+    .number {
+      margin-left: 1rem;
+    }
+  }
+
+  .menu {
+    text-transform: uppercase;
+  }
+
+  .item {
+    cursor: pointer;
+    padding: 10px 20px;
+
+    &:hover {
+      color: white;
+      border-radius: 5px;
+    }
+  }
+
+  .men {
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+  }
+
+  .women {
+    &:hover {
+      background-color: rgba(235, 13, 205, 0.85);
+    }
+  }
+}
