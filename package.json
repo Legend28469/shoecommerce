@@ -15,7 +15,6 @@
     "gatsby-plugin-sharp": "^2.3.5",
     "gatsby-plugin-snipcart": "^1.1.2",
     "gatsby-source-datocms": "^2.2.0",
-    "gsap": "^3.2.6",
     "node-sass": "^4.12.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",

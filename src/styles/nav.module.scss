@@ -20,6 +20,11 @@
     font-family: Lato, sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
   }
 
   .sexes {
@@ -30,12 +35,18 @@
     display: flex;
     width: 12rem;
     justify-content: space-between;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      display: none;
+    }
   }
 
   .cart {
     margin-left: auto;
     margin-right: 4rem;
     text-transform: uppercase;
+    cursor: pointer;
 
     .number {
       margin-left: 1rem;
@@ -44,6 +55,11 @@
 
   .menu {
     text-transform: uppercase;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      display: none;
+    }
   }
 
   .item {
@@ -66,5 +82,9 @@
     &:hover {
       background-color: rgba(235, 13, 205, 0.85);
     }
+  }
+
+  // Medium devices (tablets, less than 992px)
+  @media (max-width: 991.98px) {
   }
 }
