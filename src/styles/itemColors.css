@@ -1,0 +1,37 @@
+.Black {
+  background: rgb(15, 16, 16);
+  background: linear-gradient(
+    45deg,
+    rgba(15, 16, 16, 1) 30%,
+    rgba(88, 99, 99, 1) 100%
+  );
+}
+
+.Red {
+  background: rgb(81, 13, 13);
+  background: linear-gradient(
+    45deg,
+    rgba(81, 13, 13, 1) 30%,
+    rgba(136, 76, 47, 1) 100%
+  );
+}
+
+.Purple {
+  background: rgb(64, 13, 81);
+  background: linear-gradient(
+    45deg,
+    rgba(64, 13, 81, 1) 30%,
+    rgba(136, 47, 133, 1) 100%
+  );
+}
+
+.Blue {
+  background: rgb(13, 69, 81);
+  background: linear-gradient(45deg, $blue);
+  background: rgb(13, 69, 81);
+  background: linear-gradient(
+    45deg,
+    rgba(13, 69, 81, 1) 30%,
+    rgba(47, 136, 136, 1) 100%
+  );
+}

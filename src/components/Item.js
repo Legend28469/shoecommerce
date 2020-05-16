@@ -1,9 +1,17 @@
 import React from "react";
 import styles from "../styles/item.module.scss";
+import "../styles/itemColors.css";
 
-const Item = ({ name, price, isFacingRight, image, shoeNumber }) => {
+const Item = ({
+  name,
+  price,
+  isFacingRight,
+  image,
+  shoeNumber,
+  backgroundColor,
+}) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${backgroundColor}`}>
       <div className={styles.number}>{shoeNumber}</div>
 
       <div className={styles.shoe}>

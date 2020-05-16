@@ -14,7 +14,7 @@ export default () => {
     <StaticQuery
       query={graphql`
         query CatalogueQuery {
-          products: allDatoCmsProduct {
+          products: allDatoCmsProduct(sort: { fields: shoeNumber }) {
             edges {
               node {
                 id
@@ -23,6 +23,7 @@ export default () => {
                 isFacingRight
                 shoeNumber
                 sex
+                backgroundColor
                 image {
                   url
                   sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {

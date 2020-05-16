@@ -7,7 +7,15 @@ const ItemContainer = ({ data, sex }) => {
     <div className={styles.container}>
       {data.map((product, i) => {
         const {
-          node: { id, name, price, isFacingRight, image, shoeNumber },
+          node: {
+            id,
+            name,
+            price,
+            isFacingRight,
+            image,
+            shoeNumber,
+            backgroundColor,
+          },
         } = product;
 
         if (sex === "Men" && product.node.sex === "Male") {
@@ -19,6 +27,7 @@ const ItemContainer = ({ data, sex }) => {
               isFacingRight={isFacingRight}
               image={image}
               shoeNumber={shoeNumber}
+              backgroundColor={backgroundColor}
             />
           );
         } else if (sex === "Women" && product.node.sex === "Female") {
@@ -30,6 +39,7 @@ const ItemContainer = ({ data, sex }) => {
               isFacingRight={isFacingRight}
               image={image}
               shoeNumber={shoeNumber}
+              backgroundColor={backgroundColor}
             />
           );
         } else if (!sex) {
@@ -41,6 +51,7 @@ const ItemContainer = ({ data, sex }) => {
               isFacingRight={isFacingRight}
               image={image}
               shoeNumber={shoeNumber}
+              backgroundColor={backgroundColor}
             />
           );
         }
