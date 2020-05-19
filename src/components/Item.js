@@ -28,7 +28,17 @@ const Item = ({
           <div className={styles.price}>${price}</div>
         </div>
 
-        <div className={styles.buy}>+</div>
+        <div
+          className={`${styles.buy} snipcart-add-item`}
+          data-item-id={name.split(" ").join("-")}
+          data-item-price={price}
+          data-item-url="/"
+          data-item-description="High-quality shoes"
+          data-item-image={image.url}
+          data-item-name={name}
+        >
+          +
+        </div>
       </div>
     </div>
   );

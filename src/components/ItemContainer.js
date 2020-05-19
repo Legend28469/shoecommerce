@@ -2,6 +2,12 @@ import React from "react";
 import styles from "../styles/itemcontainer.module.scss";
 import Item from "./Item";
 
+/*
+  Build footer
+  Use sex data here to make titles {Shoes, Mens Shoes, Womens Shoes}
+  Host
+*/
+
 const ItemContainer = ({ data, sex }) => {
   return (
     <div className={styles.container}>

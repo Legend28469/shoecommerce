@@ -7,7 +7,12 @@ export default () => {
   const [sex, setSex] = useState("");
 
   const swapSex = (currentSex) => {
-    setSex(currentSex);
+    // setSex(currentSex);
+    if (currentSex === sex) {
+      setSex("");
+    } else {
+      setSex(currentSex);
+    }
   };
 
   return (

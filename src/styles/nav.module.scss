@@ -4,6 +4,9 @@
   align-items: center;
   position: relative;
   font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+  padding: 10px 80px;
 
   .circle {
     position: absolute;
@@ -22,7 +25,7 @@
     font-size: 1.5rem;
 
     a {
-      color: #000;
+      color: #fff;
       text-decoration: none;
     }
   }
@@ -35,6 +38,7 @@
     display: flex;
     width: 12rem;
     justify-content: space-between;
+    font-size: 1.1rem;
 
     // Small devices (landscape phones, less than 768px)
     @media (max-width: 767.98px) {
@@ -44,21 +48,17 @@
 
   .cart {
     margin-left: auto;
-    margin-right: 4rem;
     text-transform: uppercase;
     cursor: pointer;
+    padding: 1rem;
+    color: #fff;
+    background-color: #85bb65;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    border-radius: 5px;
 
     .number {
       margin-left: 1rem;
-    }
-  }
-
-  .menu {
-    text-transform: uppercase;
-
-    // Small devices (landscape phones, less than 768px)
-    @media (max-width: 767.98px) {
-      display: none;
     }
   }
 
@@ -74,7 +74,7 @@
 
   .men {
     &:hover {
-      background-color: rgba(0, 0, 0, 0.85);
+      background-color: rgba(20, 88, 255, 0.85);
     }
   }
 

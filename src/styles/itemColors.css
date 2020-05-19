@@ -27,8 +27,6 @@
 
 .Blue {
   background: rgb(13, 69, 81);
-  background: linear-gradient(45deg, $blue);
-  background: rgb(13, 69, 81);
   background: linear-gradient(
     45deg,
     rgba(13, 69, 81, 1) 30%,
