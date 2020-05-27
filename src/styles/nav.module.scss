@@ -8,6 +8,10 @@
   color: #fff;
   padding: 10px 80px;
 
+  @media (max-width: 991.98px) {
+    padding: 10px;
+  }
+
   .circle {
     position: absolute;
     top: -230px;
@@ -17,6 +21,10 @@
     width: 550px;
     border-radius: 100%;
     background-color: #fbfbfb;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
   }
 
   .title {
