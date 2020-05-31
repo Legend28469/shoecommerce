@@ -12,11 +12,12 @@ exports.createPages = async function({ actions, graphql }) {
   `);
 
   data.allDatoCmsProduct.edges.forEach((edge) => {
-    const slug = edge.node.shoeNumber;
+    const shoeNumber = edge.node.shoeNumber;
+    console.log("Shoe Number: ", shoeNumber, " type: ", typeof shoeNumber);
     actions.createPage({
-      path: slug,
+      path: shoeNumber,
       component: require.resolve(`./src/templates/storeItem.js`),
-      context: { slug: slug },
+      context: { shoeNumber: shoeNumber },
     });
   });
 };

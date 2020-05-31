@@ -3,10 +3,10 @@ import Nav from "../components/Nav";
 import "../styles/reset.scss";
 import styles from "../styles/App.module.scss";
 
-const Layout = ({ children, swapSex }) => {
+const Layout = ({ children, swapSex, showSex }) => {
   return (
     <>
-      <Nav swapSex={swapSex} />
+      <Nav swapSex={swapSex} showSex={showSex} />
       <div className={styles.container}>{children}</div>
     </>
   );

@@ -5,10 +5,10 @@ module.exports = {
     siteName: "Shoecommerce",
   },
   plugins: [
-    "gatsby-plugin-sass",
-    "gatsby-plugin-react-helmet",
+    { resolve: "gatsby-plugin-sass" },
+    { resolve: "gatsby-plugin-react-helmet" },
     {
-      resolve: `gatsby-source-datocms`,
+      resolve: "gatsby-source-datocms",
       options: { apiToken: process.env.DATO_API_TOKEN },
     },
     {
@@ -20,16 +20,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: "gatsby-plugin-prefetch-google-fonts",
       options: {
         fonts: [
           {
-            family: `Lato`,
-            variants: [`700`],
+            family: "Lato",
+            variants: ["700"],
           },
           {
-            family: `Roboto`,
-            variants: [`400`],
+            family: "Roboto",
+            variants: ["400"],
           },
         ],
       },

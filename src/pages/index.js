@@ -46,7 +46,7 @@ export default () => {
         }
       `}
       render={(data) => (
-        <Layout site={data.site} swapSex={swapSex}>
+        <Layout site={data.site} swapSex={swapSex} showSex={true}>
           <ItemContainer data={data.products.edges} sex={sex} />
         </Layout>
       )}
