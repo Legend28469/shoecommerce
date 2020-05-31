@@ -10,7 +10,6 @@ const storeItem = ({ data }) => {
 
   return (
     <>
-      {console.log(data)}
       <Layout showSex={false}>
         <ul className={styles.sitemap}>
           <li>

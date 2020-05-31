@@ -13,7 +13,6 @@ exports.createPages = async function({ actions, graphql }) {
 
   data.allDatoCmsProduct.edges.forEach((edge) => {
     const shoeNumber = edge.node.shoeNumber;
-    console.log("Shoe Number: ", shoeNumber, " type: ", typeof shoeNumber);
     actions.createPage({
       path: shoeNumber,
       component: require.resolve(`./src/templates/storeItem.js`),
