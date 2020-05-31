@@ -28,12 +28,7 @@ const storeItem = ({ data }) => {
           <div className={`${styles.text} ${backgroundColor}`}>
             <h3 className={styles.itemName}>{name}</h3>
             <h5 className={styles.price}>${price}</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Praesentium, hic doloribus numquam quibusdam accusantium adipisci
-              voluptate! Iusto, fugit facilis magni corrupti culpa
-              necessitatibus! Modi quam corporis minus architecto saepe sed.
-            </p>
+            <p>The {name} are awesome shoes. Buy it now before it's gone!</p>
           </div>
         </div>
 

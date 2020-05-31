@@ -17,6 +17,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin-top: 1rem;
+
+  @media (max-width: 991.98px) {
+    grid-template-columns: 1fr;
+  }
 
   .imgBox {
     max-width: 500px;
@@ -28,7 +33,7 @@
   }
 
   .text {
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
     margin-bottom: 1rem;
     border-radius: 10px;
     color: #ffffff;
@@ -36,11 +41,15 @@
     .itemName {
       margin-top: 1rem;
       font-size: 3rem;
+      font-weight: 700;
+      font-family: Lato, sans-serif;
+      font-weight: 700;
     }
 
     .price {
       margin: 2rem 0;
       font-size: 2rem;
+      color: #fab1b1;
     }
 
     p {
@@ -55,10 +64,15 @@
   margin-right: 10%;
   font-size: 2rem;
 
+  @media (max-width: 991.98px) {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   h4 {
     color: #ffffff;
     display: inline-block;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 700;
     border-radius: 10px;
     cursor: pointer;
