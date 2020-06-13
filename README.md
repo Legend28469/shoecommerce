@@ -1,49 +1,55 @@
-# Snipcart + Gatsby + DatoCMS example
+# Shoecommerce
 
-This is a demo project to get you started with a static ecommerce site powered by [Gatsby](https://www.gatsbyjs.org/), [Snipcart](https://snipcart.com/) and [DatoCMS](https://www.datocms.com/).
+> An ecommerce site created with Gatsby (React) and Snipcart
 
-It's a brutalist socks ecommerce site, that looks like this:
+## Table of contents
 
-![Socks ecommerce screenshot](./preview.png)
+- [General info](#general-info)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Features](#features)
+- [Status](#status)
+- [Inspiration](#inspiration)
+- [Contact](#contact)
 
-You can see how it looks live on this [demo installation](https://datocms-snipcart-gatsby-demo.netlify.com/).
+## General info
 
-All the details on how this works on the [related blog post](https://www.datocms.com/blog/static-ecommerce-website-snipcart-gatsbyjs-datocms).
+I created this because with COVID out in the world a lot of people are moving to ecommerce this is one of many solutions.
 
-## Deploy on DatoCMS
+## Screenshots
 
-If you want to set up a live demo for yourself, just [sign up for a free DatoCMS account](https://dashboard.datocms.com/signup) and click this button:
+![Desktop Screenshot](./desktop.png)
 
-[![Deploy with DatoCMS](https://dashboard.datocms.com/deploy/button.svg)](https://dashboard.datocms.com/deploy?repo=datocms/snipcart-gatsby-demo)
+## Technologies
 
-## Usage
+- HTML
+- CSS
+- Javascript
+- React
+- Gatsby
+- Snipcart
 
-To run this project locally, install the dependencies of this project:
-
-```
-yarn install
-```
-
-Add an `.env` file containing the read-only API token of your DatoCMS site (set up with the demo button above):
-
-```
-echo 'DATO_API_TOKEN=abc123' >> .env
-```
-
-Then, to run this website in development mode (with live-reload):
-
-```
-yarn develop
-```
-
-To build the final, production ready static website:
+## Setup
 
 ```
-yarn build
+npm install
+npm run develop
 ```
 
-The final result will be saved in the `public` directory.
+## Features
 
-## Further demo options
+List of features ready and TODOs for future development
 
-This project is also available as a demo on [Gatsby Cloud](https://www.gatsbyjs.com/). This will allow you to test the [Gatsby preview](https://www.datocms.com/blog/live-preview-changes-on-gatsby-preview) capabilities in no time.
+- Responsive
+- Data fetched from a CMS
+- Ecommerce solution with a shopping cart
+- Product pages built with a custom template
+
+## Status
+
+Project is: _finished_
+
+## Contact
+
+Created by [Johnathan Brown](https://www.johnathanbrown.me) - feel free to contact me!
